@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button class="btn btn-primary" onclick="findAll()">Display all SmartPhone</button>
+<button class="btn btn-primary" onclick="createForm()">Create new phone</button>
+<h1>List SmartPhone</h1>
+<div id="display"></div>
+<div id="form">
+    <table class="table">
+        <tr>
+            <td colspan="2"><h3 id="title"></h3></td>
+        </tr>
+        <tr>
+            <td>Producer</td>
+            <td><label><input type="text" id="producer"></label></td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td><label><input type="text" id="model"></label></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><label><input type="text" id="price"></label></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button id="action">Create</button>&nbsp;
+                <button onclick="backHome()">Back</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="list.js"></script>
+</html>
